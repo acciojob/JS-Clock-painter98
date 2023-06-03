@@ -11,8 +11,8 @@ function setDate() {
  let hour = time.getHours();
 
 	let secondDeg = (seconds*360/60)+90;
-	let minDeg = (minutes*360/60) + (seconds/60)*6 + 90;
-	let hourDeg = (hour*360/12) + (minutes/60)*30 + 90;
+	let minDeg = (minutes*360/60) + 90;
+	let hourDeg = (hour*360/12) + 90;
 
 	secondHand.style.transform = `rotate(${secondDeg}deg)`;
 	minsHand.style.transform = `rotate(${minDeg}deg)`;
